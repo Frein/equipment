@@ -91,7 +91,6 @@ export default class Form extends React.Component {
 	setButtonStatus() {
 		let disableButton = !this.isDataValid();
 		const isValidName = this.isValidFileName();
-		console.log({disableButton, isValidName});
 		if (!isValidName) disableButton = true;
 		if(this.state.disableButton !== disableButton) {
 			this.setState({disableButton});
